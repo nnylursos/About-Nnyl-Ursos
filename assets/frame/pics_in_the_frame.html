@@ -1,0 +1,75 @@
+<html>
+    <head>
+
+        <style>
+
+            .my0image-slideshow {
+                max-width: 500px;
+                margin-left: 340px;
+            }
+
+            .mySlides {
+                display:none;
+                border: 4px solid whitesmoke;
+                width: 97.5%;
+            }
+
+            p {
+                margin-bottom: 0px;
+                margin-top: 4.5px;
+                color: rgba(24, 112, 253, 0.741);
+            }
+            
+        </style>
+
+    </head>
+
+
+    <body>
+        <div class="my-image-slideshow">
+            <img class="mySlides" src="frame_img/Pic1.jpg"/>
+            <img class="mySlides" src="frame_img/Pic2.jpg"/>
+            <img class="mySlides" src="frame_img/Pic3.jpg"/>
+            <img class="mySlides" src="frame_img/Pic4.jpg"/>
+            <img class="mySlides" src="frame_img/Pic5.jpg"/>
+            <img class="mySlides" src="frame_img/Pic6.jpg"/>
+            <img class="mySlides" src="frame_img/Pic7.jpg"/>
+            <img class="mySlides" src="frame_img/Pic8.jpg"/>
+            <img class="mySlides" src="frame_img/Pic9.jpg"/>
+            <img class="mySlides" src="frame_img/Pic10.jpg"/>
+            <img class="mySlides" src="frame_img/Pic11.jpg"/>
+            <img class="mySlides" src="frame_img/Pic12.jpg"/>
+            <img class="mySlides" src="frame_img/Pic13.jpg"/>
+            <img class="mySlides" src="frame_img/Pic14.jpg"/>
+            <img class="mySlides" src="frame_img/Pic15.jpg"/>
+            <img class="mySlides" src="frame_img/Pic16.jpg"/>
+            <img class="mySlides" src="frame_img/Pic17.jpg"/>
+            <img class="mySlides" src="frame_img/Pic18.jpg"/>
+            <img class="mySlides" src="frame_img/Pic19.jpg"/>
+            <img class="mySlides" src="frame_img/Pic20.jpg"/>
+        </div>
+       <center><p><big><i><b>"My Pictures"</b></i></big></p></center>
+    
+
+
+
+        <script>
+
+var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+        </script>
+    </body>
+</html>
